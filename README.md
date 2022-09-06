@@ -34,6 +34,8 @@ TBD.
 
 [pub_url]: https://pub.dartlang.org/packages/%NAME%
 [pub_img]: https://img.shields.io/pub/v/%NAME%.svg
+
+<!-- ENABLE WHEN PUBLISHED
 [gha_url]: https://github.com/neo-dart/%NAME%/actions
 [gha_img]: https://github.com/neo-dart/%NAME%/workflows/Dart/badge.svg
 [cov_url]: https://codecov.io/gh/neo-dart/%NAME%
@@ -42,6 +44,9 @@ TBD.
 [doc_img]: https://img.shields.io/badge/Documentation-%NAME%-blue.svg
 [sty_url]: https://pub.dev/packages/neodart
 [sty_img]: https://img.shields.io/badge/style-neodart-9cf.svg
+-->
+
+## Purpose
 
 This library TBD.
 
@@ -50,5 +55,9 @@ This library TBD.
 TBD.
 
 ## Contributing
+
+TBD.
+
+## Inspiration
 
 TBD.
