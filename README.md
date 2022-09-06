@@ -42,9 +42,11 @@ TBD.
 [cov_img]: https://codecov.io/gh/neo-dart/%NAME%/branch/main/graph/badge.svg
 [doc_url]: https://www.dartdocs.org/documentation/%NAME%/latest
 [doc_img]: https://img.shields.io/badge/Documentation-%NAME%-blue.svg
+-->
+
 [sty_url]: https://pub.dev/packages/neodart
 [sty_img]: https://img.shields.io/badge/style-neodart-9cf.svg
--->
+
 
 ## Purpose
 
