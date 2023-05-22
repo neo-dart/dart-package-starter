@@ -9,13 +9,16 @@ package_name=${PWD##*/}
 echo "Initializing $package_name..."
 
 # Replace the string "replace_with_package_name" with the package name.
-find . --type f --exec sed -i "s/replace_with_package_name/$package_name/g" {}
+find . --type f --exec sed -i .bak "s/replace_with_package_name/$package_name/g" {}
 
 # Reset the current git repository.
 rm -rf .git
 
 # Remove "!/START_HERE\n" from ".gitignore".
-sed '/START_HERE/d' -i .gitignore
+sed -i .bak '/START_HERE/d' .gitignore
+
+# Remove all files that end with ".bak".
+rm -rf **/*.bak
 
 # Delete this script.
 rm -- "$0"
