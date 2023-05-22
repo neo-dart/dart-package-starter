@@ -1,7 +1,26 @@
-.dart_tool/
-.packages
-.vscode/
+# Allow-listing gitignore template for Dart projects
 
-coverage/
+# Ignore everything
+*
 
-pubspec.lock
+# But not these files...
+!/.gitignore
+!LICENSE
+!.cspell.json
+!/START_HERE
+
+# Dart source files
+!*.dart
+
+# Markdown files
+!*.md
+
+# Dart module files
+!analysis_options.yaml
+!pubspec.yaml
+
+# GitHub metadata
+!.github/*.yml
+
+# ...even if they are in subdirectories.
+!*/

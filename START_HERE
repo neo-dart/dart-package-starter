@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# This script will exit on any error.
+set -e
+
+# Get the current directory (just the name) to use as the package name.
+# This is the name of the directory that contains this script.
+package_name=${PWD##*/}
+echo "Initializing $package_name..."
+
+# Replace the string "replace_with_package_name" with the package name.
+find . --type f --exec sed -i "s/replace_with_package_name/$package_name/g" {}
+
+# Reset the current git repository.
+rm -rf .git
+
+# Remove "!/START_HERE\n" from ".gitignore".
+sed '/START_HERE/d' -i .gitignore
+
+# Delete this script.
+rm -- "$0"
+
+# Initialize a new git repository.
+git init
+git add .
+git commit -m "Initial commit."
