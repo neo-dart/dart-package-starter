@@ -17,8 +17,12 @@ rm -rf .git
 # Remove "!/START_HERE\n" from ".gitignore".
 sed -i .bak '/START_HERE/d' .gitignore
 
+# Remove all lines between one that includes "%DELETE_START%" and "%DELETE_END%" in README.md:
+sed -i .bak '/%DELETE_START%/,/%DELETE_END%/d' README.md
+
 # Remove all files that end with ".bak".
-rm -rf *.bak
+rm .cspell.json.bak
+rm .gitignore.bak
 rm -rf **/*.bak
 
 # Delete this script.
