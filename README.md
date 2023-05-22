@@ -1,4 +1,4 @@
-# %NAME%
+# replace_with_package_name
 
 <!-- DELETE START -->
 
@@ -16,6 +16,7 @@ What it includes:
 - `Makefile` listen it's just easier than bash scripts (and works on actions).
 - `pubspec.yaml` because Dart.
 - `README.md` duh.
+- `START_HERE`, a shell script to get you started.
 
 ---
 
@@ -32,21 +33,19 @@ TBD.
 
 [![Style guide][sty_img]][sty_url]
 
-[pub_url]: https://pub.dartlang.org/packages/%NAME%
-[pub_img]: https://img.shields.io/pub/v/%NAME%.svg
-
 <!-- ENABLE WHEN PUBLISHED
-[gha_url]: https://github.com/neo-dart/%NAME%/actions
-[gha_img]: https://github.com/neo-dart/%NAME%/workflows/Dart/badge.svg
-[cov_url]: https://codecov.io/gh/neo-dart/%NAME%
-[cov_img]: https://codecov.io/gh/neo-dart/%NAME%/branch/main/graph/badge.svg
-[doc_url]: https://www.dartdocs.org/documentation/%NAME%/latest
-[doc_img]: https://img.shields.io/badge/Documentation-%NAME%-blue.svg
+[pub_url]: https://pub.dartlang.org/packages/replace_with_package_name
+[pub_img]: https://img.shields.io/pub/v/replace_with_package_name.svg
+[gha_url]: https://github.com/neo-dart/replace_with_package_name/actions
+[gha_img]: https://github.com/neo-dart/replace_with_package_name/workflows/Dart/badge.svg
+[cov_url]: https://codecov.io/gh/neo-dart/replace_with_package_name
+[cov_img]: https://codecov.io/gh/neo-dart/replace_with_package_name/branch/main/graph/badge.svg
+[doc_url]: https://www.dartdocs.org/documentation/replace_with_package_name/latest
+[doc_img]: https://img.shields.io/badge/Documentation-replace_with_package_name-blue.svg
 -->
 
 [sty_url]: https://pub.dev/packages/neodart
 [sty_img]: https://img.shields.io/badge/style-neodart-9cf.svg
-
 
 ## Purpose
 

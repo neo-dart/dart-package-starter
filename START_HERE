@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# This script will exit on any error.
+set -e
+
+# Get the current directory (just the name) to use as the package name.
+# This is the name of the directory that contains this script.
+package_name=${PWD##*/}
+echo "Initializing $package_name..."
+
+# Replace the string "replace_with_package_name" with the package name.
+find . --type f --exec sed -i .bak "s/replace_with_package_name/$package_name/g" {}
+
+# Reset the current git repository.
+rm -rf .git
+
+# Remove "!/START_HERE\n" from ".gitignore".
+sed -i .bak '/START_HERE/d' .gitignore
+
+# Remove all lines between one that includes "%DELETE_START%" and "%DELETE_END%" in README.md:
+sed -i .bak '/%DELETE_START%/,/%DELETE_END%/d' README.md
+
+# Remove all files that end with ".bak".
+rm .cspell.json.bak
+rm .gitignore.bak
+rm -rf **/*.bak
+
+# Delete this script.
+rm -- "$0"
+
+# Initialize a new git repository.
+git init
+git add .
+git commit -m "Initial commit."
