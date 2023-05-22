@@ -18,6 +18,7 @@ rm -rf .git
 sed -i .bak '/START_HERE/d' .gitignore
 
 # Remove all files that end with ".bak".
+rm -rf *.bak
 rm -rf **/*.bak
 
 # Delete this script.
